@@ -1,0 +1,6 @@
+*.exe
+*.pidb
+*.userprefs
+3DMMonopoly_Data/*
+Temp/*
+Library/*

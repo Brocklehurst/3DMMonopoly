@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+
+Project("{5F6D7ECC-B93C-CA8E-611C-2AB7C56A954D}") = "3DMMonopoly", "Assembly-CSharp-firstpass.csproj", "{2A1F8BBD-CEA5-601C-125A-F8C98C213E2E}"
+EndProject
+Project("{5F6D7ECC-B93C-CA8E-611C-2AB7C56A954D}") = "3DMMonopoly", "Assembly-CSharp.csproj", "{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}"
+EndProject
+Project("{5F6D7ECC-B93C-CA8E-611C-2AB7C56A954D}") = "3DMMonopoly", "Assembly-UnityScript-firstpass.unityproj", "{CD869214-31CD-1ECC-0661-89DCDFBECE11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A1F8BBD-CEA5-601C-125A-F8C98C213E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1F8BBD-CEA5-601C-125A-F8C98C213E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1F8BBD-CEA5-601C-125A-F8C98C213E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1F8BBD-CEA5-601C-125A-F8C98C213E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD869214-31CD-1ECC-0661-89DCDFBECE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD869214-31CD-1ECC-0661-89DCDFBECE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD869214-31CD-1ECC-0661-89DCDFBECE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD869214-31CD-1ECC-0661-89DCDFBECE11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	
+EndGlobal
