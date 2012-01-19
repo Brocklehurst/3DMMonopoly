@@ -20,7 +20,11 @@ public class MovePiece : MonoBehaviour {
 
 	public void Move(int amountMove)
 	{
-		iTween.MoveTo(gameObject,boardPath[currentPoint+amountMove],3);
-		currentPoint+=amountMove;
+		int moveVector = currentPoint+amountMove;
+		if(moveVector>boardPath.Length){
+			moveVector-=boardPath.Length;
+		}
+		iTween.MoveTo(gameObject,boardPath[moveVector],3);
+		currentPoint=moveVector;
 	}
 }
