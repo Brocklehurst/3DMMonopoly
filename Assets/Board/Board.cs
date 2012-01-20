@@ -1,4 +1,5 @@
 using UnityEngine;
+
 using System.Collections;
 using System.Xml;
 using System.IO;
@@ -83,11 +84,13 @@ public class Board : MonoBehaviour
 		}
 	}
 	
-	public void OnDrawGizmosSelected()
-	{
+	public void OnDrawGizmos()
+	{	
+		Start();
 		foreach (BoardSpace s in spaces)
 		{
 			Gizmos.DrawSphere (s.offset, 0.5f);
 		}
 	}
+	
 }
