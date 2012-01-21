@@ -13,6 +13,6 @@ public class JailSpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Jail space!");
 	}
 }

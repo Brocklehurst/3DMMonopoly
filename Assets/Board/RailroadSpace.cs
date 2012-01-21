@@ -13,6 +13,6 @@ public class RailroadSpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Railroad space!");
 	}
 }

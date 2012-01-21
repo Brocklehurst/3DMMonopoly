@@ -13,6 +13,6 @@ public class TaxSpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Tax space!");
 	}
 }

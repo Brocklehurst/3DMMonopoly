@@ -13,6 +13,6 @@ public class UtilitySpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Utility space!");
 	}
 }

@@ -13,6 +13,6 @@ public class SurpriseSpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Surprise space!");
 	}
 }
