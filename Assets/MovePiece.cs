@@ -17,7 +17,7 @@ public class MovePiece : MonoBehaviour
 		boardIndex = (boardIndex + 1) % parent.spaces.Length;
 		Hashtable args = new Hashtable() {
 			{"position", parent.spaces[boardIndex].offset},
-			{"time", 0.5f} };
+			{"time", 0.3f} };
 		if (amountMove > 0)
 		{
 			Pass();
