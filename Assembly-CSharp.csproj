@@ -56,10 +56,10 @@
      <Compile Include="Assets\Board\SurpriseSpace.cs" />
      <Compile Include="Assets\Board\TaxSpace.cs" />
      <Compile Include="Assets\Board\UtilitySpace.cs" />
+     <Compile Include="Assets\Card\TakeCard.cs" />
      <Compile Include="Assets\Dice.cs" />
      <Compile Include="Assets\FetchString.cs" />
      <Compile Include="Assets\MovePiece.cs" />
-     <Compile Include="Assets\Scripts\TakeCard.cs" />
      <None Include="Assets\Board\board.xml" />
   </ItemGroup>
   <ItemGroup>
