@@ -13,6 +13,6 @@ public class FreeSpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Free space!");
 	}
 }

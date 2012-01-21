@@ -13,6 +13,6 @@ public class CommunitySpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Community space!");
 	}
 }

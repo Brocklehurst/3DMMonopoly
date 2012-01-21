@@ -13,6 +13,6 @@ public class PropertySpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Property space!");
 	}
 }

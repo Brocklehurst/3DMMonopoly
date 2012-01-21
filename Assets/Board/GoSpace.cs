@@ -13,6 +13,6 @@ public class GoSpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		
+		Debug.Log("Go space!");
 	}
 }
