@@ -59,6 +59,7 @@
      <Compile Include="Assets\Dice.cs" />
      <Compile Include="Assets\FetchString.cs" />
      <Compile Include="Assets\MovePiece.cs" />
+     <Compile Include="Assets\Scripts\TakeCard.cs" />
      <None Include="Assets\Board\board.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
