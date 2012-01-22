@@ -5,6 +5,8 @@ Project("{5F6D7ECC-B93C-CA8E-611C-2AB7C56A954D}") = "3DMMonopoly", "Assembly-CSh
 EndProject
 Project("{5F6D7ECC-B93C-CA8E-611C-2AB7C56A954D}") = "3DMMonopoly", "Assembly-CSharp-vs.csproj", "{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}"
 EndProject
+Project("{5F6D7ECC-B93C-CA8E-611C-2AB7C56A954D}") = "3DMMonopoly", "Assembly-CSharp-Editor-vs.csproj", "{BE3A15E7-9A8A-FC6C-26A9-715C9D3AF9DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2059F30B-9130-EA8E-4EA4-DF22D1702AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3A15E7-9A8A-FC6C-26A9-715C9D3AF9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3A15E7-9A8A-FC6C-26A9-715C9D3AF9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3A15E7-9A8A-FC6C-26A9-715C9D3AF9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3A15E7-9A8A-FC6C-26A9-715C9D3AF9DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
