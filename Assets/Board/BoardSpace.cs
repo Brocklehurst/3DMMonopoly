@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class BoardSpace {
+public abstract class BoardSpace : MonoBehaviour {
 	
 	//offset from board
 	public Vector3 offset;
