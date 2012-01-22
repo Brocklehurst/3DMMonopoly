@@ -13,7 +13,7 @@ public class CommunitySpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		TakeCard card = GameObject.Find("CommunityPile/Card").GetComponent<TakeCard>();
+		TakeCard card = GameObject.Find("CommunityCard").GetComponent<TakeCard>();
 		card.Take();
 	}
 }

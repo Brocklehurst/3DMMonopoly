@@ -31,8 +31,8 @@ public class TakeCard : MonoBehaviour
 		Vector3 cameraTransform = Camera.main.transform.position;
 		Vector3 cameraForward = Camera.main.transform.forward;
 		Hashtable hashToCam = new Hashtable() {
-		{"position", cameraTransform+cameraForward*6.0f},
-		{"looktarget", Camera.main.transform},
+		{"position", cameraTransform+cameraForward*4.0f},
+		{"looktarget", cameraTransform},
 		{"time", 2.0f} };
 		iTween.Stop();
 		iTween.MoveTo(gameObject, hashToCam);

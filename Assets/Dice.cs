@@ -85,7 +85,9 @@ public class Dice : MonoBehaviour {
 	void RollDice()
 	{
 		dice1 = Random.Range(1, 7);
+		//dice1=1;
 		dice2 = Random.Range(1, 7);
+		//dice2=1;
 		diceResult=dice1+dice2;
 	    playTimes++;
 	}
