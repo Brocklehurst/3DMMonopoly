@@ -9,13 +9,11 @@ public class Board : MonoBehaviour
 {
 	public TextAsset boardXML;
 	public BoardSpace[] spaces;
-	const int spaceAmount = 40;
-	BoardConsts boardConsts;
+	public BoardConsts boardConsts;
 	
 	// Use this for initialization
 	void Start () {
 		boardConsts = GetComponent<BoardConsts>();
-		spaces = new BoardSpace[spaceAmount];
 		LoadSpaces();
 	}
 	
@@ -37,31 +35,31 @@ public class Board : MonoBehaviour
 			switch (node.Name)
 			{
 				case "GoSpace":
-					space = new GoSpace();
+					space = gameObject.AddComponent<GoSpace>();
 					break;
 				case "FreeSpace":
-					space = new FreeSpace();
+					space = gameObject.AddComponent<FreeSpace>();
 					break;
 				case "JailSpace":
-					space = new JailSpace();
+					space = gameObject.AddComponent<JailSpace>();
 					break;
 				case "SurpriseSpace":
-					space = new SurpriseSpace();
+					space = gameObject.AddComponent<SurpriseSpace>();
 					break;
 				case "CommunitySpace":
-					space = new CommunitySpace();
+					space = gameObject.AddComponent<CommunitySpace>();
 					break;
 				case "TaxSpace":
-					space = new TaxSpace();
+					space = gameObject.AddComponent<TaxSpace>();
 					break;
 				case "PropertySpace":
-					space = new PropertySpace();
+					space = gameObject.AddComponent<PropertySpace>();
 					break;
 				case "RailroadSpace":
-					space = new RailroadSpace();
+					space = gameObject.AddComponent<RailroadSpace>();
 					break;
 				case "UtilitySpace":
-					space = new UtilitySpace();
+					space = gameObject.AddComponent<UtilitySpace>();
 					break;
 			}
 			
@@ -85,12 +83,11 @@ public class Board : MonoBehaviour
 	}
 	
 	public void OnDrawGizmos()
-	{	
-		Start();
-		foreach (BoardSpace s in spaces)
-		{
-			Gizmos.DrawSphere (s.offset, 0.5f);
-		}
+	{
+//		foreach (BoardSpace s in spaces)
+//		{
+//			Gizmos.DrawSphere (s.offset, 0.5f);
+//		}
 	}
 	
 }

@@ -5,7 +5,6 @@ public class GoSpace : BoardSpace {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	/// <summary>

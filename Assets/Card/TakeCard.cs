@@ -1,60 +1,67 @@
 using UnityEngine;
 using System.Collections;
 
-public class TakeCard : MonoBehaviour {
-	
-	public bool isPlaying = false;
-	public Transform initCard = null;
+public class TakeCard : MonoBehaviour
+{
 	public Transform spawnPoint = null;
-	private Transform ChanceCard = null;
-	
+	public Vector3 pileOffset;
+
+	void Start()
+	{
+		GoToPile();
+	}
+
 	/// <summary>
 	/// GUI calls
 	/// </summary>
 	void OnGUI()
 	{
-		if (GUI.Button (new Rect(20,40,80,20), "Take Card"))
+		if (GUI.Button (new Rect(10,280,120,20), "Put Card Away"))
 		{
-			// if animation isn't playing already
-			if(!isPlaying)
-			{
-				isPlaying=true;
-				Vector3 cameraTransform = Camera.main.transform.position;
-				Vector3 cameraForward = Camera.main.transform.forward;
-				ChanceCard = (Transform) Instantiate(initCard, spawnPoint.position, spawnPoint.rotation); //Create card at spawn
-				Hashtable hashToCam = new Hashtable() {
-				{"position", cameraTransform+cameraForward*1.5f},
-				{"looktarget", cameraTransform},
-				{"time", 2.0f} };
-				iTween.Stop();
-				iTween.MoveTo(ChanceCard.gameObject, hashToCam); 
-			}
-		}
-		if (GUI.Button (new Rect(20,80,120,20), "Put Card Back"))
-		{
-			// if animation isn't playing already
-			if(isPlaying)
-			{
-				if(ChanceCard!=null){
-					Debug.Log(spawnPoint.rotation);
-					Hashtable hashToPile = new Hashtable() {
-					{"position", spawnPoint.position+spawnPoint.forward*0.5f},
-					{"time", 2.0f}};
-					Hashtable hashToPile_rot = new Hashtable() {
-					{"rotation", spawnPoint},
-					{"oncomplete", "EndOfCard"},
-					{"oncompletetarget", gameObject},
-					{"time", 2.0f}};
-					iTween.Stop();
-					iTween.MoveTo(ChanceCard.gameObject, hashToPile);
-					iTween.RotateTo(ChanceCard.gameObject, hashToPile_rot); 
-				}			
-			}
+			PutAway();
 		}
 	}
-	
-	public void EndOfCard(){
-		Destroy(ChanceCard.gameObject);
-		isPlaying=false;
+
+	/// <summary>
+	/// takes a card from the pile and shows it to camera
+	/// </summary>
+	public void Take()
+	{
+		renderer.enabled = true;
+		Vector3 cameraTransform = Camera.main.transform.position;
+		Vector3 cameraForward = Camera.main.transform.forward;
+		Hashtable hashToCam = new Hashtable() {
+		{"position", cameraTransform+cameraForward*4.0f},
+		{"looktarget", cameraTransform},
+		{"time", 2.0f} };
+		iTween.Stop();
+		iTween.MoveTo(gameObject, hashToCam);
+	}
+
+	/// <summary>
+	/// animates card away
+	/// </summary>
+	public void PutAway()
+	{
+		Debug.Log(spawnPoint.rotation);
+		Hashtable hashToPile = new Hashtable() {
+		{"position", spawnPoint.position + pileOffset},
+		{"time", 2.0f}};
+		Hashtable hashToPile_rot = new Hashtable() {
+		{"rotation", spawnPoint},
+		{"oncomplete", "GoToPile"},
+		{"time", 2.0f}};
+		iTween.Stop();
+		iTween.MoveTo(gameObject, hashToPile);
+		iTween.RotateTo(gameObject, hashToPile_rot);
+	}
+
+	/// <summary>
+	/// immediately goes back to the pile and hides
+	/// </summary>
+	void GoToPile()
+	{
+		transform.position = spawnPoint.position + pileOffset;
+		renderer.enabled = false;
 	}
 }

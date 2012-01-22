@@ -13,6 +13,7 @@ public class CommunitySpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		Debug.Log("Community space!");
+		TakeCard card = GameObject.Find("CommunityCard").GetComponent<TakeCard>();
+		card.Take();
 	}
 }
