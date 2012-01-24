@@ -27,7 +27,7 @@ public class TakeCard : MonoBehaviour
 	/// </summary>
 	public void Take()
 	{
-		renderer.enabled = true;
+		Helper.ShowOrHide(gameObject, true);
 		Vector3 cameraTransform = Camera.main.transform.position;
 		Vector3 cameraForward = Camera.main.transform.forward;
 		Hashtable hashToCam = new Hashtable() {
@@ -62,6 +62,6 @@ public class TakeCard : MonoBehaviour
 	void GoToPile()
 	{
 		transform.position = spawnPoint.position + pileOffset;
-		renderer.enabled = false;
+		Helper.ShowOrHide(gameObject, false);
 	}
 }

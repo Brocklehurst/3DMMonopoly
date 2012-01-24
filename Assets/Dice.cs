@@ -27,20 +27,20 @@ public class Dice : MonoBehaviour {
 	
 	void OnGUI()
 	{
-		GUI.Box (new Rect(10,10,100,90), "Options Menu");
+		GUI.Box (new Rect(10,10,100,115), "Options Menu");
 		GUI.Box (new Rect(10,130,120,20), "Dice 1: "+dice1);
 		GUI.Box (new Rect(10,150,120,20), "Dice 2: "+dice2);
-		GUI.Box (new Rect(10,170,120,20), "In Jail: "+inJail);	
-		GUI.Box (new Rect(10,200,120,20), "Final Result: "+diceResult);	
-		
-	
+		GUI.Box (new Rect(10,170,120,20), "In Jail: "+inJail);
+		GUI.Box (new Rect(10,200,120,20), "Final Result: "+diceResult);
+
+
 	    // BUTTON - Roll Dice
 		if (GUI.Button (new Rect(20,40,80,20), "Roll Dice")) {
 			//set camera to follow piece
 			MovePiece piece = (MovePiece)playerTransform.GetComponent(typeof(MovePiece));
 			SmoothFollow follow = (SmoothFollow)cameraTransform.GetComponent(typeof(SmoothFollow));
 			follow.target = piece.transform;
-			
+
 			// Check to see if player is in jail
 	        if(!inJail){
 				RollDice();     // Roll the dice
@@ -80,8 +80,15 @@ public class Dice : MonoBehaviour {
 	        Debug.Log("Sent to jail");
 			inJail=true;
 		}
+
+		// BUTTON - move forward one space
+		if (GUI.Button (new Rect(20, 100, 80, 20), "Move one"))
+		{
+			MovePiece piece = (MovePiece)playerTransform.GetComponent(typeof(MovePiece));
+			piece.Move(1);
+		}
 	}
-	
+
 	void RollDice()
 	{
 		dice1 = Random.Range(1, 7);
