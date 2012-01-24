@@ -4,3 +4,5 @@
 3DMMonopoly_Data/*
 Temp/*
 Library/*
+*.DS_Store
+Assets/*.DS_Store
