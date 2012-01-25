@@ -14,7 +14,7 @@ public class DiceAnimation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(transform.animation["roll"].time>transform.animation["roll"].length)
+		if(!animation.IsPlaying("roll"))
 		{
 			KillDice();
 		}

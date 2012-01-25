@@ -1,31 +1,30 @@
 using UnityEngine;
 using System.Collections;
 
-public class Dice : MonoBehaviour {
-	
+public class Dice : MonoBehaviour
+{
 	public int dice1 = 0;
 	public int dice2 = 0;
 	public int diceResult = 0;
-	
+
 	public int playTimes = 0;
 	public int playAgainTimes = 0;
-	
+
 	public bool inJail=false;
 	public int jailTimes=0;
-	
+
 	public Transform playerTransform;
 	public Transform cameraTransform;
 	public Transform dicePrefab;
-	
+
 	// Use this for initialization
 	void Start () {
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
 	}
-	
+
 	void OnGUI()
 	{
 		GUI.Box (new Rect(10,10,100,115), "Options Menu");
@@ -33,7 +32,6 @@ public class Dice : MonoBehaviour {
 		GUI.Box (new Rect(10,150,120,20), "Dice 2: "+dice2);
 		GUI.Box (new Rect(10,170,120,20), "In Jail: "+inJail);
 		GUI.Box (new Rect(10,200,120,20), "Final Result: "+diceResult);
-
 
 	    // BUTTON - Roll Dice
 		if (GUI.Button (new Rect(20,40,80,20), "Roll Dice")) {
@@ -73,9 +71,8 @@ public class Dice : MonoBehaviour {
 				}
 			}
 			RollAnim(dice1,dice2);
-			MovePiece(diceResult);
 		}
-	
+
 		// BUTTON - Send to Jail
 		if (GUI.Button (new Rect (20,70,80,20), "Send to jail")) {
 	        Debug.Log("Sent to jail");
@@ -98,17 +95,17 @@ public class Dice : MonoBehaviour {
 		diceResult=dice1+dice2;
 	    playTimes++;
 	}
-	
+
 	public void MovePiece(int moveAmount)
 	{
 		MovePiece piece = (MovePiece)playerTransform.GetComponent(typeof(MovePiece));
 		piece.Move(moveAmount);
 	}
-	
+
 	public void RollAnim(int value1, int value2)
 	{
 		Transform diceAnim = Instantiate(dicePrefab, transform.position, transform.rotation) as Transform;
-		DiceAnimation diceScript = (DiceAnimation)diceAnim.GetComponent(typeof(DiceAnimation));
+		DiceAnimation diceScript = diceAnim.gameObject.AddComponent<DiceAnimation>();
 		diceScript.diceNum1=value1;
 		diceScript.diceNum2=value2;
 		diceScript.diceTransform=transform;
