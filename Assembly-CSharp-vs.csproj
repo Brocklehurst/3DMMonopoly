@@ -44,8 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Board\Board.cs" />
      <Compile Include="Assets\Board\BoardConsts.cs" />
+     <Compile Include="Assets\Board\BoardData.cs" />
      <Compile Include="Assets\Board\BoardSpace.cs" />
      <Compile Include="Assets\Board\CommunitySpace.cs" />
      <Compile Include="Assets\Board\FreeSpace.cs" />
@@ -57,10 +57,18 @@
      <Compile Include="Assets\Board\TaxSpace.cs" />
      <Compile Include="Assets\Board\UtilitySpace.cs" />
      <Compile Include="Assets\Card\TakeCard.cs" />
+     <Compile Include="Assets\Data\Data.cs" />
      <Compile Include="Assets\Dice.cs" />
      <Compile Include="Assets\FetchString.cs" />
-     <Compile Include="Assets\Helper.cs" />
+     <Compile Include="Assets\Helper\Helper.cs" />
+     <Compile Include="Assets\Helper\Pair.cs" />
      <Compile Include="Assets\MovePiece.cs" />
+     <Compile Include="Assets\Player\Player.cs" />
+     <Compile Include="Assets\Property\NormalProperty.cs" />
+     <Compile Include="Assets\Property\Property.cs" />
+     <Compile Include="Assets\Property\PropertyData.cs" />
+     <Compile Include="Assets\Property\RailroadProperty.cs" />
+     <Compile Include="Assets\Property\UtilityProperty.cs" />
      <None Include="Assets\Board\board.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>

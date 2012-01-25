@@ -1,43 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <board>
 	<GoSpace grid="10,0"/>
-	<PropertySpace grid="9,0"/>
+	<PropertySpace grid="9,0" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<CommunitySpace grid="8,0"/>
-	<PropertySpace grid="7,0"/>
+	<PropertySpace grid="7,0" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<TaxSpace grid="6,0"/>
 	<RailroadSpace grid="5,0"/>
-	<PropertySpace grid="4,0"/>
+	<PropertySpace grid="4,0" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<SurpriseSpace grid="3,0"/>
-	<PropertySpace grid="2,0"/>
-	<PropertySpace grid="1,0"/>
+	<PropertySpace grid="2,0" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
+	<PropertySpace grid="1,0" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<FreeSpace grid="0,0"/>
-	<PropertySpace grid="0,1"/>
+	<PropertySpace grid="0,1" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<UtilitySpace grid="0,2"/>
-	<PropertySpace grid="0,3"/>
-	<PropertySpace grid="0,4"/>
+	<PropertySpace grid="0,3" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
+	<PropertySpace grid="0,4" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<RailroadSpace grid="0,5"/>
-	<PropertySpace grid="0,6"/>
+	<PropertySpace grid="0,6" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<CommunitySpace grid="0,7"/>
-	<PropertySpace grid="0,8"/>
-	<PropertySpace grid="0,9"/>
+	<PropertySpace grid="0,8" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
+	<PropertySpace grid="0,9" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<FreeSpace grid="0,10"/>
-	<PropertySpace grid="1,10"/>
+	<PropertySpace grid="1,10" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<SurpriseSpace grid="2,10"/>
-	<PropertySpace grid="3,10"/>
-	<PropertySpace grid="4,10"/>
+	<PropertySpace grid="3,10" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
+	<PropertySpace grid="4,10" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<RailroadSpace grid="5,10"/>
-	<PropertySpace grid="6,10"/>
-	<PropertySpace grid="7,10"/>
+	<PropertySpace grid="6,10" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
+	<PropertySpace grid="7,10" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<UtilitySpace grid="8,10"/>
-	<PropertySpace grid="9,10"/>
+	<PropertySpace grid="9,10" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<JailSpace grid="10,10"/>
-	<PropertySpace grid="10,9"/>
-	<PropertySpace grid="10,8"/>
+	<PropertySpace grid="10,9" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
+	<PropertySpace grid="10,8" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<CommunitySpace grid="10,7"/>
-	<PropertySpace grid="10,6"/>
+	<PropertySpace grid="10,6" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<RailroadSpace grid="10,5"/>
 	<SurpriseSpace grid="10,4"/>
-	<PropertySpace grid="10,3"/>
+	<PropertySpace grid="10,3" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 	<TaxSpace grid="10,2"/>
-	<PropertySpace grid="10,1"/>
+	<PropertySpace grid="10,1" name="henrys" price="50" house="250" mortgage="200">
+		<fines>
+			<fine>50</fine>
+			<fine>200</fine>
+			<fine>600</fine>
+			<fine>1400</fine>
+			<fine>1700</fine>
+			<fine>2000</fine>
+		</fines>
+	</PropertySpace>
 </board>

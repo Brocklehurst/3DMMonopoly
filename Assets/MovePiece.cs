@@ -4,19 +4,20 @@ using System.Collections;
 public class MovePiece : MonoBehaviour
 {
 	public int boardIndex = 0;
-	public Board parent;
+	public BoardData parent;
 
 	void Start()
 	{
+		parent = Helper.GameData.boardData;
 	}
 
 	public void Move(int amountMove)
 	{
 		--amountMove;
 		//increment but wrap
-		boardIndex = (boardIndex + 1) % parent.spaces.Length;
+		boardIndex = (boardIndex + 1) % parent.Spaces.Length;
 		Hashtable args = new Hashtable() {
-			{"position", parent.spaces[boardIndex].offset},
+			{"position", parent.Spaces[boardIndex].offset},
 			{"time", 0.3f} };
 		if (amountMove > 0)
 		{
@@ -46,6 +47,6 @@ public class MovePiece : MonoBehaviour
 	/// </summary>
 	public void Land()
 	{
-		parent.spaces[boardIndex].Land();
+		parent.Spaces[boardIndex].Land();
 	}
 }

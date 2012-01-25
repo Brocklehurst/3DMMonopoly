@@ -1,15 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class BoardSpace : MonoBehaviour {
-	
+public abstract class BoardSpace
+{
 	//offset from board
 	public Vector3 offset;
-	
-	// Use this for initialization
-	void Start () {
-	
-	}
 	
 	/// <summary>
 	/// behavior that happens when you land here

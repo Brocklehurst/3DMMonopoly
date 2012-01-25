@@ -20,4 +20,10 @@ public class Helper
 			r.enabled = show;
 		}
 	}
+
+	//returns the reference to the main game data
+	public static Data GameData
+	{
+		get { return GameObject.Find("Data").GetComponent<Data>(); }
+	}
 }

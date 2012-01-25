@@ -1,11 +1,16 @@
 using UnityEngine;
 using System.Collections;
 
-public class PropertySpace : BoardSpace {
-
-	// Use this for initialization
-	void Start () {
+public class PropertySpace : BoardSpace
+{
+	Property property;
 	
+	//create and set the property mapping
+	public void SetProperty(int propNum, Property p)
+	{
+		property = p;
+		PropertyInfo pi = Helper.GameData.properties;
+		pi.SetProperty(propNum, property);
 	}
 	
 	/// <summary>
@@ -13,6 +18,6 @@ public class PropertySpace : BoardSpace {
 	/// </summary>
 	public override void Land ()
 	{
-		Debug.Log("Property space!");
+		Debug.Log("Property space! Fine: $" + property.CalculateFine(new Player()));
 	}
 }
