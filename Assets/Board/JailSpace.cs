@@ -1,13 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class JailSpace : BoardSpace {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+public class JailSpace : BoardSpace
+{
 	/// <summary>
 	/// go to jail
 	/// </summary>

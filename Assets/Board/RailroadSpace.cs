@@ -1,18 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
-public class RailroadSpace : BoardSpace {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+public class RailroadSpace : PropertySpace {
 	/// <summary>
 	/// buy a railroad / pay
 	/// </summary>
 	public override void Land ()
 	{
-		Debug.Log("Railroad space!");
+		base.Land();
 	}
 }

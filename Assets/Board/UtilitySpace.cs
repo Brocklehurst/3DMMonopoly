@@ -1,18 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
-public class UtilitySpace : BoardSpace {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+public class UtilitySpace : PropertySpace {
 	/// <summary>
 	/// buy utility / pay
 	/// </summary>
 	public override void Land ()
 	{
-		Debug.Log("Utility space!");
+		base.Land();
 	}
 }

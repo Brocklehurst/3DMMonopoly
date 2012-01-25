@@ -4,7 +4,7 @@ using System.Collections;
 public class PropertySpace : BoardSpace
 {
 	Property property;
-	
+
 	//create and set the property mapping
 	public void SetProperty(int propNum, Property p)
 	{

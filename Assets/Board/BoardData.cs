@@ -84,9 +84,21 @@ public class BoardData
 					break;
 				case "RailroadSpace":
 					space = new RailroadSpace();
+					//parse railroad info
+					string rname = node.Attributes["name"].Value;
+					int rprice = Convert.ToInt32(node.Attributes["price"].Value);
+					int rmort = Convert.ToInt32(node.Attributes["mortgage"].Value);
+					RailroadProperty rp = new RailroadProperty(rprice, rmort);
+					((RailroadSpace)space).SetProperty(propIndex++, rp);
 					break;
 				case "UtilitySpace":
 					space = new UtilitySpace();
+					//parse railroad info
+					string uname = node.Attributes["name"].Value;
+					int uprice = Convert.ToInt32(node.Attributes["price"].Value);
+					int umort = Convert.ToInt32(node.Attributes["mortgage"].Value);
+					UtilityProperty up = new UtilityProperty(uprice, umort);
+					((UtilitySpace)space).SetProperty(propIndex++, up);
 					break;
 			}
 

@@ -23,7 +23,7 @@
 		</fines>
 	</PropertySpace>
 	<TaxSpace grid="6,0"/>
-	<RailroadSpace grid="5,0"/>
+	<RailroadSpace grid="5,0" name="henrys" price="200" mortgage="100"/>
 	<PropertySpace grid="4,0" name="henrys" price="50" house="250" mortgage="200">
 		<fines>
 			<fine>50</fine>
@@ -66,7 +66,7 @@
 			<fine>2000</fine>
 		</fines>
 	</PropertySpace>
-	<UtilitySpace grid="0,2"/>
+	<UtilitySpace grid="0,2" name="henrys" price="150" mortgage="75"/>
 	<PropertySpace grid="0,3" name="henrys" price="50" house="250" mortgage="200">
 		<fines>
 			<fine>50</fine>
@@ -87,7 +87,7 @@
 			<fine>2000</fine>
 		</fines>
 	</PropertySpace>
-	<RailroadSpace grid="0,5"/>
+	<RailroadSpace grid="0,5" name="henrys" price="200" mortgage="100"/>
 	<PropertySpace grid="0,6" name="henrys" price="50" house="250" mortgage="200">
 		<fines>
 			<fine>50</fine>
@@ -151,7 +151,7 @@
 			<fine>2000</fine>
 		</fines>
 	</PropertySpace>
-	<RailroadSpace grid="5,10"/>
+	<RailroadSpace grid="5,10" name="henrys" price="200" mortgage="100"/>
 	<PropertySpace grid="6,10" name="henrys" price="50" house="250" mortgage="200">
 		<fines>
 			<fine>50</fine>
@@ -172,7 +172,7 @@
 			<fine>2000</fine>
 		</fines>
 	</PropertySpace>
-	<UtilitySpace grid="8,10"/>
+	<UtilitySpace grid="8,10" name="henrys" price="150" mortgage="75"/>
 	<PropertySpace grid="9,10" name="henrys" price="50" house="250" mortgage="200">
 		<fines>
 			<fine>50</fine>
@@ -215,7 +215,7 @@
 			<fine>2000</fine>
 		</fines>
 	</PropertySpace>
-	<RailroadSpace grid="10,5"/>
+	<RailroadSpace grid="10,5" name="henrys" price="200" mortgage="100"/>
 	<SurpriseSpace grid="10,4"/>
 	<PropertySpace grid="10,3" name="henrys" price="50" house="250" mortgage="200">
 		<fines>
