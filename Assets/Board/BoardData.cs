@@ -63,6 +63,7 @@ public class BoardData
 					break;
 				case "TaxSpace":
 					space = new TaxSpace();
+					((TaxSpace)space).Fee = Convert.ToInt32(node.Attributes["fee"].Value);
 					break;
 				case "PropertySpace":
 					space = new PropertySpace();
