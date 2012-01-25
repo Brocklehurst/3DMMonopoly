@@ -5,14 +5,14 @@ using System.Collections;
 public class Data : MonoBehaviour
 {
 	public BoardData boardData;
-	public PropertyInfo properties;
+	public PropertyData properties;
 	public Player player;
 	public BoardConsts boardConsts;
 	public TextAsset boardXML;
 
 	void Start ()
 	{
-		properties = new PropertyInfo();
+		properties = new PropertyData();
 		boardData = new BoardData();
 		player = new Player();
 	}

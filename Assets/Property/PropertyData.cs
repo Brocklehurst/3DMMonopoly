@@ -8,7 +8,7 @@ public class PropertyData
 	List<Pair<Property, Player>> ownership;
 	const int propertyAmount = 28;
 
-	public PropertyInfo()
+	public PropertyData()
 	{
 		ownership = new List<Pair<Property, Player>>();
 		//fill in initial blank pairs too

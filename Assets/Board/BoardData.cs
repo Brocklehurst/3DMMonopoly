@@ -9,7 +9,7 @@ public class BoardData
 {
 	TextAsset boardXML;
 	BoardConsts boardConsts;
-	PropertyInfo props;
+	PropertyData props;
 	BoardSpace[] spaces;
 	const int spaceAmount = 40;
 

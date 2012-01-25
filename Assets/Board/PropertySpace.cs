@@ -9,7 +9,7 @@ public class PropertySpace : BoardSpace
 	public void SetProperty(int propNum, Property p)
 	{
 		property = p;
-		PropertyInfo pi = Helper.GameData.properties;
+		PropertyData pi = Helper.GameData.properties;
 		pi.SetProperty(propNum, property);
 	}
 	
