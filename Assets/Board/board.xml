@@ -22,7 +22,7 @@
 			<fine>450</fine>
 		</fines>
 	</PropertySpace>
-	<TaxSpace grid="6,0" fee="200"/>
+	<TaxSpace grid="6,0" fee="200" name="actorfee"/>
 	<RailroadSpace grid="5,0" name="theatre" price="200" mortgage="100"/>
 	<PropertySpace grid="4,0" name="michaels" price="100" house="50" mortgage="50">
 		<fines>
@@ -227,7 +227,7 @@
 			<fine>1500</fine>
 		</fines>
 	</PropertySpace>
-	<TaxSpace grid="10,2" fee="100"/>
+	<TaxSpace grid="10,2" fee="100" name="superzee"/>
 	<PropertySpace grid="10,1" name="henrys" price="400" house="250" mortgage="200">
 		<fines>
 			<fine>50</fine>
