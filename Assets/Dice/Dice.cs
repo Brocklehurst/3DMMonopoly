@@ -105,9 +105,10 @@ public class Dice : MonoBehaviour
 	public void RollAnim(int value1, int value2)
 	{
 		Transform diceAnim = Instantiate(dicePrefab, transform.position, transform.rotation) as Transform;
-		DiceAnimation diceScript = diceAnim.gameObject.AddComponent<DiceAnimation>();
+		DiceAnimation diceScript = diceAnim.gameObject.GetComponent<DiceAnimation>();
 		diceScript.diceNum1=value1;
 		diceScript.diceNum2=value2;
 		diceScript.diceTransform=transform;
+		diceScript.PlayAnim();
 	}
 }
