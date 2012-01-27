@@ -65,6 +65,7 @@
      <Compile Include="Assets\Helper\Pair.cs" />
      <Compile Include="Assets\MovePiece.cs" />
      <Compile Include="Assets\Player\Player.cs" />
+     <Compile Include="Assets\Player\PlayerData.cs" />
      <Compile Include="Assets\Property\NormalProperty.cs" />
      <Compile Include="Assets\Property\Property.cs" />
      <Compile Include="Assets\Property\PropertyData.cs" />

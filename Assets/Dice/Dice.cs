@@ -17,12 +17,7 @@ public class Dice : MonoBehaviour
 	public Transform cameraTransform;
 	public Transform dicePrefab;
 
-	// Use this for initialization
 	void Start () {
-	}
-
-	// Update is called once per frame
-	void Update () {
 	}
 
 	void OnGUI()
@@ -82,24 +77,16 @@ public class Dice : MonoBehaviour
 		// BUTTON - move forward one space
 		if (GUI.Button (new Rect(20, 100, 80, 20), "Move one"))
 		{
-			MovePiece(1);
+			Helper.GameData.playerData.Get(0).Move(1);
 		}
 	}
 
 	void RollDice()
 	{
 		dice1 = Random.Range(1, 7);
-		//dice1=1;
 		dice2 = Random.Range(1, 7);
-		//dice2=1;
 		diceResult=dice1+dice2;
 	    playTimes++;
-	}
-
-	public void MovePiece(int moveAmount)
-	{
-		MovePiece piece = (MovePiece)playerTransform.GetComponent(typeof(MovePiece));
-		piece.Move(moveAmount);
 	}
 
 	public void RollAnim(int value1, int value2)

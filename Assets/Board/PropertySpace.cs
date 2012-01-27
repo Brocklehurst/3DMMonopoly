@@ -18,6 +18,6 @@ public class PropertySpace : BoardSpace
 	/// </summary>
 	public override void Land ()
 	{
-		Debug.Log("Property space! Fine: $" + property.CalculateFine(new Player()));
+		Debug.Log("Property space! Fine: $" + property.CalculateFine(new Player(new MovePiece(), "")));
 	}
 }

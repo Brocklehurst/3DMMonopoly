@@ -18,6 +18,11 @@ public class PropertyData
 		}
 	}
 
+	public List<Pair<Property, Player>> OwnershipTable
+	{
+		get { return ownership; }
+	}
+
 	/// <summary>
 	/// updates the ownership mapping with a particular property
 	/// </summary>
