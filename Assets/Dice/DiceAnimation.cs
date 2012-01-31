@@ -66,8 +66,8 @@ public class DiceAnimation : MonoBehaviour {
 
 	void KillDice()
 	{
-		GameObject.Find("Main Camera").GetComponent<SmoothFollow>().target = GameObject.Find("Bullhorncar").transform;
+		GameObject.Find("Main Camera").GetComponent<SmoothFollow>().target = Helper.GameData.playerData.Current.Piece;
 		Destroy(gameObject);
-		Helper.GameData.playerData.Get(0).Move(diceNum1 + diceNum2);
+		Helper.GameData.playerData.Current.Move(diceNum1 + diceNum2);
 	}
 }

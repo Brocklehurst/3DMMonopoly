@@ -47,6 +47,10 @@ public class Player
         get { return boardIndex; }
         set { boardIndex = value; }
     }
+	public Transform Piece
+	{
+		get { return piece.transform; }
+	}
     #endregion
 
     /// <summary>
@@ -106,5 +110,7 @@ public class Player
     public void Land()
     {
         parent.Spaces[boardIndex].Land();
+		Helper.GameData.playerData.NextTurn();
+		Helper.GameData.playerData.CameraToCurrent();
     }
 }

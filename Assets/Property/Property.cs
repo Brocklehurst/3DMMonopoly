@@ -6,11 +6,13 @@ public abstract class Property
 {
 	int price;
 	int mortgageValue;
+	bool mortgaged;
 
 	public Property(int p, int mort)
 	{
 		price = p;
 		mortgageValue = mort;
+		mortgaged = false;
 	}
 
 	public int MortgageValue

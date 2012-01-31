@@ -77,7 +77,7 @@ public class Dice : MonoBehaviour
 		// BUTTON - move forward one space
 		if (GUI.Button (new Rect(20, 100, 80, 20), "Move one"))
 		{
-			Helper.GameData.playerData.Get(0).Move(1);
+			Helper.GameData.playerData.Current.Move(1);
 		}
 	}
 
