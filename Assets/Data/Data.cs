@@ -6,7 +6,7 @@ public class Data : MonoBehaviour
 {
 	public BoardData boardData;
 	public PropertyData properties;
-	public Player player;
+	public PlayerData playerData;
 	public BoardConsts boardConsts;
 	public TextAsset boardXML;
 
@@ -14,6 +14,6 @@ public class Data : MonoBehaviour
 	{
 		properties = new PropertyData();
 		boardData = new BoardData();
-		player = new Player();
+		playerData = new PlayerData();
 	}
 }
