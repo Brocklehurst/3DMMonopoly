@@ -19,17 +19,10 @@ public class MovePiece : MonoBehaviour
 		iTween.MoveTo(gameObject, args);
 	}
 
-<<<<<<< HEAD
 	//we need method calls for iTween, just call parent calls
     public void Move(int i)
     {
         parent.Move(i);
-=======
-	//we need method calls for iTween, just call parent calls
-    public void Move(int i)
-    {
-        parent.Move(i);
->>>>>>> upstream/master
     }
 
 	public void Land()

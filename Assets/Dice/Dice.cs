@@ -20,11 +20,7 @@ public class Dice : MonoBehaviour
 	void Start () {
 	}
 
-<<<<<<< HEAD
-	void OnGUI()
-=======
 	public void RollDice()
->>>>>>> upstream/master
 	{
 		//set camera to follow piece
 		SmoothFollow follow = (SmoothFollow)cameraTransform.GetComponent(typeof(SmoothFollow));
@@ -50,9 +46,6 @@ public class Dice : MonoBehaviour
 		}
 		else
 		{
-<<<<<<< HEAD
-			Helper.GameData.playerData.Current.Move(1);
-=======
             // If doubles
 			if(dice1==dice2){
                 Debug.Log("Out of jail");
@@ -66,7 +59,6 @@ public class Dice : MonoBehaviour
 				jailTimes=0;        // Reset jail roll count
 				inJail=false;       // Get out of jail
 			}
->>>>>>> upstream/master
 		}
 		RollAnim(dice1,dice2);
 	}
@@ -79,11 +71,7 @@ public class Dice : MonoBehaviour
 	    playTimes++;
 	}
 
-<<<<<<< HEAD
-	public void RollAnim(int value1, int value2)
-=======
 	private void RollAnim(int value1, int value2)
->>>>>>> upstream/master
 	{
 		Transform diceAnim = Instantiate(dicePrefab, transform.position, transform.rotation) as Transform;
 		DiceAnimation diceScript = diceAnim.gameObject.GetComponent<DiceAnimation>();
