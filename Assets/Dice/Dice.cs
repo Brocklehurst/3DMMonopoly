@@ -20,68 +20,58 @@ public class Dice : MonoBehaviour
 	void Start () {
 	}
 
+<<<<<<< HEAD
 	void OnGUI()
+=======
+	public void RollDice()
+>>>>>>> upstream/master
 	{
-		GUI.Box (new Rect(10,10,100,115), "Options Menu");
-		GUI.Box (new Rect(10,130,120,20), "Dice 1: "+dice1);
-		GUI.Box (new Rect(10,150,120,20), "Dice 2: "+dice2);
-		GUI.Box (new Rect(10,170,120,20), "In Jail: "+inJail);
-		GUI.Box (new Rect(10,200,120,20), "Final Result: "+diceResult);
+		//set camera to follow piece
+		SmoothFollow follow = (SmoothFollow)cameraTransform.GetComponent(typeof(SmoothFollow));
+		follow.target = playerTransform;
 
-	    // BUTTON - Roll Dice
-		if (GUI.Button (new Rect(20,40,80,20), "Roll Dice")) {
-			//set camera to follow piece
-			SmoothFollow follow = (SmoothFollow)cameraTransform.GetComponent(typeof(SmoothFollow));
-			follow.target = playerTransform;
+		NewValues();
 
-			// Check to see if player is in jail
-	        if(!inJail){
-				RollDice();     // Roll the dice
-	            // If doubles
-				if(dice1 == dice2){
-					playAgainTimes+=1;      // Add to combo of doubles
-					Debug.Log("Double combo: " + playAgainTimes);
-				}
-	            // If 3 doubles in a row
-				if(playAgainTimes == 3){
-					Debug.Log("Sent to jail for 3 doubles");
-					inJail=true;        // Send to jail
-				}else if(dice1 != dice2){
-					playAgainTimes=0;       // Reset combo
-				}
-			} else {
-				RollDice();     // Roll the dice
-	            // If doubles
-				if(dice1==dice2){
-	                Debug.Log("Out of jail");
-					inJail=false;       // Get out of jail
-				} else if(dice1 != dice2){
-	                jailTimes++;        // Add to number of rolls in jail
-	            }
-	            // If rolled 3 times in jail
-				if(jailTimes==3){
-	                Debug.Log("Out of jail");
-					jailTimes=0;        // Reset jail roll count
-					inJail=false;       // Get out of jail
-				}
-			}
-			RollAnim(dice1,dice2);
-		}
-
-		// BUTTON - Send to Jail
-		if (GUI.Button (new Rect (20,70,80,20), "Send to jail")) {
-	        Debug.Log("Sent to jail");
-			inJail=true;
-		}
-
-		// BUTTON - move forward one space
-		if (GUI.Button (new Rect(20, 100, 80, 20), "Move one"))
+		// Check to see if player is in jail
+        if(!inJail)
 		{
-			Helper.GameData.playerData.Current.Move(1);
+            // If doubles
+			if(dice1 == dice2){
+				playAgainTimes+=1;      // Add to combo of doubles
+				Debug.Log("Double combo: " + playAgainTimes);
+			}
+            // If 3 doubles in a row
+			if(playAgainTimes == 3){
+				Debug.Log("Sent to jail for 3 doubles");
+				inJail=true;        // Send to jail
+			}else if(dice1 != dice2){
+				playAgainTimes=0;       // Reset combo
+			}
 		}
+		else
+		{
+<<<<<<< HEAD
+			Helper.GameData.playerData.Current.Move(1);
+=======
+            // If doubles
+			if(dice1==dice2){
+                Debug.Log("Out of jail");
+				inJail=false;       // Get out of jail
+			} else if(dice1 != dice2){
+                jailTimes++;        // Add to number of rolls in jail
+            }
+            // If rolled 3 times in jail
+			if(jailTimes==3){
+                Debug.Log("Out of jail");
+				jailTimes=0;        // Reset jail roll count
+				inJail=false;       // Get out of jail
+			}
+>>>>>>> upstream/master
+		}
+		RollAnim(dice1,dice2);
 	}
 
-	void RollDice()
+	private void NewValues()
 	{
 		dice1 = Random.Range(1, 7);
 		dice2 = Random.Range(1, 7);
@@ -89,7 +79,11 @@ public class Dice : MonoBehaviour
 	    playTimes++;
 	}
 
+<<<<<<< HEAD
 	public void RollAnim(int value1, int value2)
+=======
+	private void RollAnim(int value1, int value2)
+>>>>>>> upstream/master
 	{
 		Transform diceAnim = Instantiate(dicePrefab, transform.position, transform.rotation) as Transform;
 		DiceAnimation diceScript = diceAnim.gameObject.GetComponent<DiceAnimation>();

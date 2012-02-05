@@ -1,4 +1,5 @@
 using UnityEngine;
+<<<<<<< HEAD
 using System.Collections.Generic;
 
 public class PlayerData
@@ -19,6 +20,28 @@ public class PlayerData
     public Player Get(int num)
     {
         return players[num];
+=======
+using System.Collections.Generic;
+
+public class PlayerData
+{
+    List<Player> players;
+	int current;
+
+    public PlayerData()
+    {
+		current = 0;
+        players = new List<Player>();
+        players.Add(new Player(GameObject.Find("Bullhorncar1").GetComponent<MovePiece>(), ""));
+		players.Add(new Player(GameObject.Find("Bullhorncar2").GetComponent<MovePiece>(), ""));
+		players.Add(new Player(GameObject.Find("Bullhorncar3").GetComponent<MovePiece>(), ""));
+		players.Add(new Player(GameObject.Find("Bullhorncar4").GetComponent<MovePiece>(), ""));
+    }
+
+    public Player Get(int num)
+    {
+        return players[num];
+>>>>>>> upstream/master
     }
 
 	public Player Current
@@ -40,5 +63,9 @@ public class PlayerData
 	public void CameraToCurrent()
 	{
 		GameObject.Find("Main Camera").GetComponent<SmoothFollow>().target = Current.Piece;
+<<<<<<< HEAD
 	}
+=======
+	}
+>>>>>>> upstream/master
 }

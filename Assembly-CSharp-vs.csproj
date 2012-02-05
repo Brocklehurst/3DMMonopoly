@@ -61,6 +61,7 @@
      <Compile Include="Assets\Dice\Dice.cs" />
      <Compile Include="Assets\Dice\DiceAnimation.cs" />
      <Compile Include="Assets\FetchString.cs" />
+     <Compile Include="Assets\GUI\YourTurnUI.cs" />
      <Compile Include="Assets\Helper\Helper.cs" />
      <Compile Include="Assets\Helper\Pair.cs" />
      <Compile Include="Assets\MovePiece.cs" />
@@ -71,7 +72,11 @@
      <Compile Include="Assets\Property\PropertyData.cs" />
      <Compile Include="Assets\Property\RailroadProperty.cs" />
      <Compile Include="Assets\Property\UtilityProperty.cs" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
+     <None Include="Assets\GUI\Resources\kitchenSinkSheet.txt" />
      <None Include="Assets\Board\board.xml" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

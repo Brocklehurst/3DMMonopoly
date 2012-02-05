@@ -9,6 +9,7 @@ public class DiceAnimation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
 	}
 
     public void PlayAnim()
@@ -17,6 +18,16 @@ public class DiceAnimation : MonoBehaviour {
         transform.FindChild("Cube_004").FindChild("dice_model").Rotate(RotateDice(diceNum1));
         transform.FindChild("Cube_002").FindChild("dice_model").Rotate(RotateDice(diceNum2));
         transform.animation.Play("roll");
+=======
+	}
+
+    public void PlayAnim()
+    {
+        GameObject.Find("Main Camera").GetComponent<SmoothFollow>().target = transform;
+        transform.FindChild("Cube_004").FindChild("dice_model").Rotate(RotateDice(diceNum1));
+        transform.FindChild("Cube_002").FindChild("dice_model").Rotate(RotateDice(diceNum2));
+        transform.animation.Play("roll");
+>>>>>>> upstream/master
     }
 
 	// Update is called once per frame
