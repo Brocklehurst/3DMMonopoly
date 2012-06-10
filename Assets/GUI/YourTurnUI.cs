@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class YourTurnUI : MonoBehaviour {
-
+/*
 	void Start () {
 		// Bottom Bar
 		var bgBottom = UI.firstToolkit.addSprite("main_bottombar-bg.png", 0, 0, 1 );
@@ -45,12 +45,6 @@ public class YourTurnUI : MonoBehaviour {
 		chatSend.positionFromBottomLeft(0.005f,0.223f);
 		var bgChat_main = UI.firstToolkit.addSprite("chat_bgMain.png", 0, 0, 1);
 		bgChat_main.positionFromBottomLeft(0.042f,0);		
-		/*
-		UIButton roll = UIButton.create("playUp.png", "playDown.png", 0, 0);
-		roll.onTouchUpInside += (a) => GameObject.Find("DiceSpawn").GetComponent<Dice>().RollDice();
-
-		UIButton moveOne = UIButton.create("playUp.png", "playDown.png", 0, 50);
-		moveOne.onTouchUpInside += (a) => Helper.GameData.playerData.Current.Move(1);
-		*/	
 	}
+*/
 }
