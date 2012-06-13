@@ -10,6 +10,7 @@ public class ChatControl : MonoBehaviour
 {
 	public UITextList textList;
 	public bool fillWithDummyData = false;
+	public bool clickToSubmit = false;
 
 	UIInput mInput;
 	bool mIgnoreNextEnter = false;
@@ -67,5 +68,13 @@ public class ChatControl : MonoBehaviour
 			}
 		}
 		mIgnoreNextEnter = true;
+	}
+	
+	void OnClick()
+	{
+		if (clickToSubmit)
+		{
+			OnSubmit();
+		}
 	}
 }
