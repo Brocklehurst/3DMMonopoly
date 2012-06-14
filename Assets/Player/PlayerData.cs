@@ -10,10 +10,10 @@ public class PlayerData
     {
 		current = 0;
         players = new List<Player>();
-        players.Add(new Player(GameObject.Find("Bullhorncar1").GetComponent<MovePiece>(), ""));
-		players.Add(new Player(GameObject.Find("Bullhorncar2").GetComponent<MovePiece>(), ""));
-		players.Add(new Player(GameObject.Find("Bullhorncar3").GetComponent<MovePiece>(), ""));
-		players.Add(new Player(GameObject.Find("Bullhorncar4").GetComponent<MovePiece>(), ""));
+        players.Add(new Player(GameObject.Find("Bullhorncar").GetComponent<MovePiece>(), ""));
+		players.Add(new Player(GameObject.Find("3Dlogo").GetComponent<MovePiece>(), ""));
+		players.Add(new Player(GameObject.Find("Sasha").GetComponent<MovePiece>(), ""));
+		players.Add(new Player(GameObject.Find("Totem1").GetComponent<MovePiece>(), ""));
     }
 
     public Player Get(int num)
