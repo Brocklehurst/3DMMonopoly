@@ -8,6 +8,7 @@ public class Data : MonoBehaviour
 	public PropertyData properties;
 	public PlayerData playerData;
 	public BoardConsts boardConsts;
+	public UIData uiData;
 	public TextAsset boardXML;
 
 	void Start ()
@@ -15,5 +16,6 @@ public class Data : MonoBehaviour
 		properties = new PropertyData();
 		boardData = new BoardData();
 		playerData = new PlayerData();
+		uiData = new UIData();
 	}
 }

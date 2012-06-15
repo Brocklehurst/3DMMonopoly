@@ -112,5 +112,8 @@ public class Player
         parent.Spaces[boardIndex].Land();
 		Helper.GameData.playerData.NextTurn();
 		Helper.GameData.playerData.CameraToCurrent();
+		
+		//reenable UI elements
+		Helper.GameData.uiData.Reenable();
     }
 }
