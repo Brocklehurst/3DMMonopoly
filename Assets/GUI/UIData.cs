@@ -30,5 +30,6 @@ public class UIData
 	public void Reenable()
 	{
 		disabled.ForEach((o) => { o.active = true; });
+		disabled.Clear();
 	}
 }
