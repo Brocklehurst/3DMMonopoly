@@ -62,7 +62,7 @@ public class ChatControl : MonoBehaviour
 
 			if (!string.IsNullOrEmpty(text))
 			{
-				textList.Add("<name>: "+text);
+				textList.Add(PlayerPrefs.GetString("Player Name")+": "+text);
 				mInput.text = "";
 				mInput.selected = false;
 			}
