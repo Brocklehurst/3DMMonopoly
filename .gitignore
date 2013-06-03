@@ -3,6 +3,7 @@
 *.userprefs
 3DMMonopoly_Data/*
 Temp/*
+Assets/ComponentCopier/*
 Library/*
 *.DS_Store
 Assets/*.DS_Store
